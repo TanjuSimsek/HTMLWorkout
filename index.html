@@ -2,13 +2,14 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Page Title</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgb(241, 238, 238);
   max-width: 200px;
   margin: 0px;
   text-align: center;
@@ -16,7 +17,7 @@
 }
 
 .title {
-  color: grey;
+  color: white;
   font-size: 18px;
 }
 
@@ -36,7 +37,7 @@ button {
 a {
   text-decoration: none;
   font-size: 22px;
-  color: black;
+  color: white;
 }
 
 button:hover, a:hover {
@@ -53,7 +54,7 @@ button:hover, a:hover {
  
 }
 body {
-  background-image: url("bulut.jpg");
+  background-image: url("kod.jpg");
   background-color: #cccccc;
   height: 500px;
   background-position: center;
@@ -81,7 +82,14 @@ li a {
 }
 
 li a:hover {
-  background-color: #111111;
+  background-color: #0a0a0a;
+}
+article {
+  float: center;
+  padding: 0px;
+  width: 100%;
+  
+  height: 300px; /* only for demonstration, should be removed */
 }
 footer {
   background-color: #777;
@@ -89,6 +97,42 @@ footer {
   text-align: center;
   color: white;
 }
+#mySidenav a {
+  position: absolute;
+  right: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  right:  0;
+}
+
+#about {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+
 
 /* Style the list inside the menu */
 
@@ -117,9 +161,9 @@ footer {
             <div class="card">
                     <h2 style="text-align:center">User Profile Card</h2>
                     <img src="tanju.png" alt="Tanju" style="width:100%">
-                    <h1>Tanju Şimşek</h1>
+                    <h1 style="color:white">Tanju Şimşek</h1>
                     <p class="title">Computer Science</p>
-                    <p>Erciyes University</p>
+                    <p class="title">Erciyes University</p>
                     <div style="margin: 24px 0;">
                       <a href="https://trello.com/tanjusimsek"><i class="fa fa-dribbble"></i></a> 
                       <a href="#"><i class="fa fa-twitter"></i></a>  
@@ -127,17 +171,22 @@ footer {
                       <a href="#"><i class="fa fa-facebook"></i></a> 
                     </div>
                     <p><button>Contact</button></p>
+                    
                   </div>
+                
 
     </aside>
-    <footer>
-            <p>Footer</p>
-          </footer>
-    
-    
-
-    
-The content of the document......
+ 
+   <footer>
+            
+      <div style="margin: 24px 0;">
+        <a href="https://trello.com/tanjusimsek"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </footer>
+   The content of the document......
 </body>
 
 </html>
