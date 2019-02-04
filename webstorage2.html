@@ -1,0 +1,20 @@
+<html>
+    <head>
+<body>
+    <b>Adınız:</b>
+    <p id="sonuc"></p>
+    <script>
+
+if (typeof(Storage) !== "undefined") {
+                
+                document.getElementById("sonuc").innerHTML=localStorage.getItem("name");
+     } else {
+         document.getElementById("sonuc").innerHTML="sorry,your browser does not supported web storage..";
+     
+     }
+
+    </script>
+</body>
+
+    </head>
+</html>

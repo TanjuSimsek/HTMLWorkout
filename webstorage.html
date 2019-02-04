@@ -1,0 +1,30 @@
+<html>
+<head>
+
+<title>Storage</title>
+
+</head>
+<body>
+    <form >
+    <input type="text"name="fullName"id="fullName"placeholder="Adınız"/><br/>
+    <input type="button" value="Giriş" onclick="adiKaydet()">
+    <p id="result"></p>
+    </form>
+    <script>
+        function adiKaydet(){
+            var ad=document.getElementById("fullName").value;
+            if (typeof(Storage) !== "undefined") {
+           localStorage.setItem("name",ad);
+           document.getElementById("result").innerHTML=localStorage.getItem("name") + " değeri kaydedildi.";
+} else {
+    document.getElementById("result").innerHTML="sorry,your browser does not supported web storage..";
+
+}
+
+
+        }
+    
+    </script>
+</body>
+
+</html>
