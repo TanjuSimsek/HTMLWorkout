@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.filter()</h2>
+
+<p>Creates a new array with all array elements that passes a test.</p>
+
+<p id="demo"></p>
+
+<script>
+    var text="";
+var products = [{name:"Tv",price:20},{name:"Phone",price:11}];
+//products.forEach(myFunction);
+
+
+var dizi = products.filter(myFunction1);
+dizi.forEach(myFunction);
+
+
+
+
+function myFunction(value, index, array) {
+    return (value.price >=11 && value.price<=20) ;
+
+
+
+}
+function myFunction1(value){
+
+  text+=value.name+"<br/>"  
+
+}
+document.getElementById("demo").innerHTML =text;
+</script>
+
+</body>
+</html>
